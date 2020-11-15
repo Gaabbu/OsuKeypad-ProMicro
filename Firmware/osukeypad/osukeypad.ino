@@ -24,7 +24,7 @@ void setup() {
   // Attaching 2 pins to debounce library
   k1.attach(Key1, INPUT_PULLUP);
   k1.interval(MILLIDEBOUNCE);
-  k2.attach(Key1, INPUT_PULLUP);
+  k2.attach(Key2, INPUT_PULLUP);
   k2.interval(MILLIDEBOUNCE);
   
   // Giving input_pullup for Macros
@@ -56,19 +56,19 @@ void loop() {
   //Key press "z"
   k1.update();
   if (k1.fell() ) {
-    Keyboard.press(115);
+    Keyboard.press(122);
     digitalWrite(Led1, HIGH);
     } else if (k1.rose() ) {
-    Keyboard.release(170);
+    Keyboard.release(122);
     digitalWrite(Led1, LOW);
   }
   //Key press "x"
     k2.update();
   if (k2.fell() ) {
-    Keyboard.press(172);
+    Keyboard.press(120);
     digitalWrite(Led1, HIGH);
     } else if (k2.rose() ) {
-    Keyboard.release(115);
+    Keyboard.release(120);
     digitalWrite(Led1, LOW);
   }
 
@@ -76,22 +76,22 @@ void loop() {
   
   //Macro key press "g"
  if (digitalRead(Macro1) == LOW) {
-  Keyboard.press(147);
+  Keyboard.press(103);
   } else {
-    Keyboard.release(147);
+    Keyboard.release(103);
   }
 
     //Macro key press "a"
  if (digitalRead(Macro2) == LOW) {
-  Keyboard.press(141);
+  Keyboard.press(97);
   } else {
-    Keyboard.release(141);
+    Keyboard.release(97);
   }
 
     //Macro key press "y"
  if (digitalRead(Macro3) == LOW) {
-  Keyboard.press(171);
+  Keyboard.press(121);
   } else {
-    Keyboard.release(171);
+    Keyboard.release(121);
   }
 }
