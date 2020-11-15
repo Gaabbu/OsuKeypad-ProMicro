@@ -2,10 +2,12 @@
 #include <Keyboard.h>
 #define BOUNCE_WITH_PROMPT_DETECTION
 #include <Bounce2.h>
+
 // Debounce interval and instantiate Bounce objects
 #define MILLIDEBOUNCE 5
 Bounce k1 = Bounce();
 Bounce k2 = Bounce();
+
 // Defining keys and leds integers
 int Key1 = 2;
 int Key2 = 4;
@@ -14,6 +16,9 @@ int Led2 = 5;
 int Macro1 = 6;
 int Macro2 = 7;
 int Macro3 = 8;
+
+// Blinks
+int blinks = 0;
 //  _________________________________SETUP BELOW_________________________________
 void setup() {
   // Attaching 2 pins to debounce library
@@ -33,8 +38,20 @@ void setup() {
 
   //Initiating keyboard library
   Keyboard.begin();
+
+  //Blinking lights before starting the void loop
+  while (blinks < 3){
+  digitalWrite(Led1, HIGH);
+  digitalWrite(Led2, HIGH);
+  delay(500);
+  digitalWrite(Led1, LOW);
+  digitalWrite(Led2, LOW);
+  delay(500);
+  blinks = (blinks + 1);
+  }
 }
 // _________________________________KEY PRESSES BELOW_________________________________
+
 void loop() {   
   //Key press "z"
   k1.update();
