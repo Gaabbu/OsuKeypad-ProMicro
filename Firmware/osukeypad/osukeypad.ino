@@ -66,10 +66,10 @@ void loop() {
     k2.update();
   if (k2.fell() ) {
     Keyboard.press(120);
-    digitalWrite(Led1, HIGH);
+    digitalWrite(Led2, HIGH);
     } else if (k2.rose() ) {
     Keyboard.release(120);
-    digitalWrite(Led1, LOW);
+    digitalWrite(Led2, LOW);
   }
 
   // _________________________________MACRO KEYS BELOW_________________________________
