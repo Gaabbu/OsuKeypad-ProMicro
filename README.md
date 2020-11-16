@@ -11,3 +11,5 @@ MX Style Switches  | x2
 
 # TODO
 * Measure acrylic thickness for the CAD Files
+* Measure bolt size
+* Revise CAD Files
