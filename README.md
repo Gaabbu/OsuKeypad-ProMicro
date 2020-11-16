@@ -10,4 +10,6 @@ MX Style Switches  | x2
 3mm Blue Leds  | 2x
 
 # TODO
-* Add CAD files for the housing or an Image guide
+* Measure acrylic thickness for the CAD Files
+* Measure bolt size
+* Revise CAD Files
