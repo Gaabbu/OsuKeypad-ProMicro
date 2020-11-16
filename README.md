@@ -4,9 +4,9 @@ A simple osu! keypad with 2 switchs and 3 macro keys using an Arduino Pro Micro,
 # Material List:
 Materials  | Amount
 ------------- | -------------
-5 or 3 Pins MX Style Switches  | x2
+MX Style Switches  | x2
 6x6mm Pushbuttons | x3
-220 ohms Resistors  | x2
+220Ω Resistors  | x2
 3mm Blue Leds  | 2x
 
 # TODO
