@@ -10,4 +10,4 @@ Materials  | Amount
 3mm Blue Leds  | 2x
 
 # TODO
-* Add CAD files for the housing or a Image guide
+* Add CAD files for the housing or an Image guide
