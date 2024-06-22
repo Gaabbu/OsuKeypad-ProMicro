@@ -1,7 +1,11 @@
-# DO NOT USE MY PCB FILES, THEY WERE JUST TESTS AND I NEVER GOT TO TEST THEM IN THE FIRST PLACE!
+> Archived since never went ahead with this.
+
+
 
 # Osu Keypad / Pro Micro
 A simple osu! keypad with 2 switchs and 3 macro keys using an Arduino Pro Micro, you'll just need to have a soldering iron, tin, and the materials here below
+
+**WARNING**:  DO NOT USE MY PCB FILES, THEY WERE JUST TESTS AND I NEVER GOT TO TEST THEM IN THE FIRST PLACE!
 
 # Material List:
 Materials  | Amount
